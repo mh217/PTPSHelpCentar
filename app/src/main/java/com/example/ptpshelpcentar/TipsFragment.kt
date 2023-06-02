@@ -7,12 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.ptpshelpcentar.data.Detailed
 import com.example.ptpshelpcentar.data.Treatment
-import com.example.ptpshelpcentar.recyclers.ScoresAdapter
 import com.example.ptpshelpcentar.recyclers.TreatmentAdapter
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore

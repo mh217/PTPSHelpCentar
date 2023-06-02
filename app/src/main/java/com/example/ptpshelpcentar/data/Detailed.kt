@@ -1,7 +1,5 @@
 package com.example.ptpshelpcentar.data
 
-import java.util.SimpleTimeZone
-
 data class Detailed(
     var Id: String = "",
     var Alterations : String ="",
