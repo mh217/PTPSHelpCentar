@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Tips"
+        android:id="@+id/tipsFragment"
+        android:icon="@drawable/ic_baseline_tips_and_updates_24"/>
+
+    <item
+        android:title="Test"
+        android:id="@+id/testFragment"
+        android:icon="@drawable/ic_baseline_quiz_24"/>
+
+    <item
+        android:title="Tracking"
+        android:id="@+id/trackingFragment2"
+        android:icon="@drawable/ic_baseline_query_stats_24"/>
+
+    <item
+        android:title="General"
+        android:id="@+id/infoFragment2"
+        android:icon="@drawable/ic_baseline_info_24"/>
+
+    <item
+        android:title="Profile"
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_baseline_person_24"/>
+</menu>

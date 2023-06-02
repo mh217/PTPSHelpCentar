@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightteal3"
+    tools:context=".Registration">
+
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="105dp"
+        android:layout_height="216dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:srcCompat="@drawable/vector_3__1_" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="162dp"
+        android:layout_height="202dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/vector_2" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="231dp"
+        android:layout_height="196dp"
+        android:layout_marginStart="88dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vector_1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="167dp"
+        android:layout_height="222dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pixcut_removebg_2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/NameEditText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="50dp"
+                android:ems="10"
+                android:hint="@string/profile1"
+                android:inputType="textPersonName"/>
+
+            <EditText
+                android:id="@+id/SurnameEditText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="50dp"
+                android:ems="10"
+                android:hint="@string/profile2"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/RegistrationEmail"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="50dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/RegistrationPassword"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="50dp"
+                android:ems="10"
+                android:hint="Lozinka"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/City"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="50dp"
+                android:ems="10"
+                android:hint="Mjesto stanovanja"
+                android:inputType="textPersonName" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="50dp">
+
+                <TextView
+                    android:id="@+id/SpolTXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/alegreya_sc_italic"
+                    android:text="@string/profile4"
+                    android:textSize="24sp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/black"/>
+
+                <RadioGroup
+                    android:id="@+id/RadioGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp">
+
+                    <RadioButton
+                        android:id="@+id/Male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="M" />
+
+                    <RadioButton
+                        android:id="@+id/Female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="F" />
+
+                    <RadioButton
+                        android:id="@+id/Nezelireci"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ne želim dijeliti" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/MedsTXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/alegreya_sc_italic"
+                android:text="@string/profile6"
+                android:textSize="24sp"
+                android:layout_marginStart="50dp"
+                android:textColor="@color/black"/>
+
+            <RadioGroup
+                android:id="@+id/RadioMeds"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/Da"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DA" />
+
+                <RadioButton
+                    android:id="@+id/Ne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NE" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/SpecificMedsTXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/alegreya_sc_italic"
+                android:text="Koje lijekove uzimate?"
+                android:textSize="24sp"
+                android:layout_marginStart="50dp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/SpecificMeds"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="50dp"
+                android:ems="10"
+                android:hint="Svi lijekovi odvojeni zarezom"
+                android:inputType="textPersonName"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="50dp">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/alegreya_sc_italic"
+                    android:text="@string/profile3"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floatingActionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginTop="20dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_baseline_calendar_today_24" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/RegistBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Register"
+                tools:layout_editor_absoluteY="330dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

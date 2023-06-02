@@ -1,0 +1,74 @@
+<resources>
+    <!-- Login aktivnost -->
+    <string name="app_name">PTSPHelpCentar</string>
+    <string name="email">Email</string>
+    <string name="password">Lozinka</string>
+    <string name="Login">Login</string>
+    <string name="Register">Register</string>
+    <string name="donthaveaccont">If you don\'t have an account</string>
+
+    <!-- Za radio buttone -->
+    <string name="genderF">F</string>
+    <string name="genderM">M</string>
+
+    <!-- Kod registracije i profila -->
+    <string name="Spol">Spol</string>
+    <string name="welcome">Dobrodošli</string>
+    <string name="profile1">Ime</string>
+    <string name="profile2">Prezime</string>
+    <string name="profile3">Datum rođenja</string>
+    <string name="profile4">Spol</string>
+    <string name="profile5">Kratka dijagnoza</string>
+    <string name="profile6">Uzimate li nekakve lijekove?</string>
+    <string name="profile7">Mjesto stanovnja</string>
+    <string name="profile8">Lijekovi koje uzimate:</string>
+    <string name="editProfil">Uredi profil</string>
+
+    <!-- Info fragment  -->
+    <string name="info1">Posttraumatski stresni poremećaj</string>
+    <string name="info2">Simptomi</string>
+    <string name="info3">Detalji</string>
+
+    <!-- Općenito -->
+    <string name="nameapp">PTSPHelp</string>
+    <string name="OPTSP">Posttraumatski stresni poremecaj</string>
+    <string name="Symptoms">Symptoms</string>
+    <string name="O_app">O aplikaciji</string>
+    <string name="popup">Riješite test kako bi se vaši rezultati mogli prikazati</string>
+
+    <!-- Test fragment -->
+    <string name="test">Odgovorite na sljedecih 20 tvrdnji ovisno o tome koliko se slazete sa navedenom tvrdnjom</string>
+    <string name="ranking">0-Uopce ne, 1-Malo, 2-Umjereno, 3-Dosta, 4-Izrazito</string>
+    <string name="done">Gotovo</string>
+
+    <!-- Kod tracking fragmenta -->
+    <string name="dalje">Riješi test</string>
+    <string name="low">Niska mogućnost oboljevanja od PTSP-a</string>
+    <string name="medium">Postoji mogućnost za razvitak težih simptoma PTSP-a</string>
+    <string name="high">Velika šansa da se razvio PTSP</string>
+
+    <!-- Pitanja -->
+    <string name="q1">Ponavljajuća, uznemirujuća i neželjena sjećanja na stresno iskustvo?</string>
+    <string name="q2">Ponavljani, uznemirujući snovi o stresnom iskustvu?</string>
+    <string name="q3">Iznenada se osjećate ili ponašate kao da je to stresno iskustvo zapravo se ponovno događa (kao da ste se stvarno vratili tamo ponovno proživljavanje)?</string>
+    <string name="q4">Osjećate se jako uzrujano kada vas nešto podsjeti na stresno iskustvo?</string>
+    <string name="q5">Snažne fizičke reakcije kada nešto podsjeti vas od stresnog iskustva (na primjer, lupanje srca, poteškoće s disanjem, znojenje)?</string>
+    <string name="q6">Izbjegavanje sjećanja, misli ili osjećaja povezanih sstresno iskustvo?</string>
+    <string name="q7">Izbjegavanje vanjskih podsjetnika na stresno iskustvo (na primjer, ljudi, mjesta, razgovori, aktivnosti, predmeti ili situacije)?</string>
+    <string name="q8">Problemi s pamćenjem važnih dijelova stresnog događaja iskustvo?</string>
+    <string name="q9">Imati jaka negativna uvjerenja o sebi, drugim ljudima, ili svijet (na primjer, imati misli poput: Ja sam loše, nešto ozbiljno nije u redu sa mnom, nikome se ne može vjerovati, svijet je potpuno opasan)?</string>
+    <string name="q10">Okrivljavanje sebe ili nekog drugog za stresno iskustvo ili ono što se dogodilo nakon njega? </string>
+    <string name="q11">Imati jake negativne osjećaje kao što su strah, užas, ljutnja, krivnja ili sram?</string>
+    <string name="q12">Gubitak interesa za aktivnosti u kojima ste prije uživali?</string>
+    <string name="q13">Osjećate se udaljeno ili odsječeno od drugih ljudi?</string>
+    <string name="q14">Poteškoće s doživljavanjem pozitivnih osjećaja (na primjer, biti nesposobni osjetiti sreću ili imati osjećaje ljubavi prema ljudima blizu tebe)?</string>
+    <string name="q15">Razdražljivo ponašanje, ispadi bijesa ili agresivno ponašanje?</string>
+    <string name="q16">Previše riskirati ili raditi stvari koje bi vas mogle uzrokovati naškoditi?</string>
+    <string name="q17">Biti "super oprezan" ili oprezan ili na oprezu?</string>
+    <string name="q18">Osjećate se nervozno ili se lako preplašite?</string>
+    <string name="q19">Imate poteškoća s koncentracijom?</string>
+    <string name="q20"> Problemi sa spavanjem?</string>
+
+
+
+</resources>

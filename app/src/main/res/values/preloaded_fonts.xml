@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alegreya_sc_italic</item>
+        <item>@font/baskervville_italic</item>
+        <item>@font/cormorant_infant_light_italic</item>
+        <item>@font/italiana</item>
+        <item>@font/tinos</item>
+    </array>
+</resources>

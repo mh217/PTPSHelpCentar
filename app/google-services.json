@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "813294859043",
+    "project_id": "ptsphelpcenter",
+    "storage_bucket": "ptsphelpcenter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813294859043:android:8fa563f6b6a754ae281296",
+        "android_client_info": {
+          "package_name": "com.example.ptpshelpcentar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "813294859043-lq0284l4dl7nttb63rf70a8lmqmn6102.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwO3Og0kgTfV9fEOSxSyboJoqoftKuPO8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "813294859043-lq0284l4dl7nttb63rf70a8lmqmn6102.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_bottom"
+    app:startDestination="@id/profileFragment">
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.ptpshelpcentar.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile"
+        app:popUpTo="@id/trackingFragment2"
+        app:popUpToInclusive="true"/>
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.example.ptpshelpcentar.TestFragment"
+        android:label="fragment_test"
+        tools:layout="@layout/fragment_test"
+        app:popUpTo="@id/trackingFragment2"
+        app:popUpToInclusive="true"/>
+    <fragment
+        android:id="@+id/tipsFragment"
+        android:name="com.example.ptpshelpcentar.TipsFragment"
+        android:label="fragment_tips"
+        tools:layout="@layout/fragment_tips"
+        app:popUpTo="@id/trackingFragment2"
+        app:popUpToInclusive="true"/>
+    <fragment
+        android:id="@+id/trackingFragment2"
+        android:name="com.example.ptpshelpcentar.TrackingFragment"
+        android:label="fragment_tracking"
+        tools:layout="@layout/fragment_tracking"
+        app:popUpTo="@id/trackingFragment2"
+        app:popUpToInclusive="true"/>
+    <fragment
+        android:id="@+id/infoFragment2"
+        android:name="com.example.ptpshelpcentar.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info"
+        app:popUpTo="@id/trackingFragment2"
+        app:popUpToInclusive="true"/>
+</navigation>
