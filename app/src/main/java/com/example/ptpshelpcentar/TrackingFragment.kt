@@ -203,7 +203,7 @@ class TrackingFragment : Fragment() {
                        barChart.xAxis.valueFormatter = IndexAxisValueFormatter(date)
 
 
-                       barChart.setVisibleXRange(1f,5f)
+                       barChart.setVisibleXRangeMaximum(5f)
                        barChart.isDragEnabled = true
                        barChart.isScaleXEnabled = true
                        barChart.setDrawGridBackground(false)
