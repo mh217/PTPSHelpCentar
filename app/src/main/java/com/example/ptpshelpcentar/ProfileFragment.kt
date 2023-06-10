@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.TextView
 import com.google.firebase.auth.FirebaseAuth
@@ -37,6 +38,7 @@ class ProfileFragment : Fragment() {
 
 
 
+
         user?.let {
             val mail = it.email
             email.text = mail
@@ -55,8 +57,6 @@ class ProfileFragment : Fragment() {
                     gender.text = it.data!!["Gender"].toString()
                 }
         }
-
-
 
         logout.setOnClickListener {
             FirebaseAuth.getInstance().signOut()
