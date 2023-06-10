@@ -64,10 +64,10 @@ object Scorer {
     }
 
     fun diagnosis (numLOW: Int,numMEDIUM: Int, numHIGH: Int) {
-        if (numLOW == 4 || numLOW == 3 || (numLOW==2 && numMEDIUM==2) || (numLOW ==2 && numHIGH ==2) || (numLOW==2 && numHIGH==1 && numMEDIUM == 1)) {
+        if (numLOW == 4 || numLOW == 3 || (numLOW==2 && numMEDIUM==2) || (numLOW ==2 && numHIGH ==2) || (numLOW==2 && numHIGH==1 && numMEDIUM == 1) || (numMEDIUM == 2 && numHIGH ==1 && numLOW ==1) || (numMEDIUM ==3 && numLOW == 1)) {
             finaldiagnosis = "LOW"
         }
-        else if (numMEDIUM == 4 || numMEDIUM ==3 || (numMEDIUM == 2 && numHIGH ==1 && numLOW ==1) || (numHIGH ==3 && numLOW ==1) || (numHIGH ==2 && numMEDIUM == 2)) {
+        else if (numMEDIUM == 4 || numMEDIUM ==3  || (numHIGH ==3 && numLOW ==1) || (numHIGH ==2 && numMEDIUM == 2)) {
             finaldiagnosis = "MEDIUM"
         }
         else {
