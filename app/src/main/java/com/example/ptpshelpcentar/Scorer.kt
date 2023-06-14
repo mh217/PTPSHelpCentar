@@ -54,10 +54,10 @@ object Scorer {
 
 
     fun  clustering (number: Double) : String {
-        if (number in 0.0..1.5) {
+        if (number in 0.0..1.32) {
             return "LOW"
         }
-        if (number in 1.5..2.5) {
+        if (number in 1.33..2.66) {
             return "MEDIUM"
         }
         return "HIGH"
