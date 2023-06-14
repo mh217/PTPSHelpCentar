@@ -232,46 +232,14 @@ class TestFragment : Fragment() {
                 val number20: Double = radioButton20.toDouble()
 
                 var allarray: ArrayList<Double> = arrayListOf()
-                allarray.addAll(
-                    listOf(
-                        number1,
-                        number2,
-                        number3,
-                        number4,
-                        number5,
-                        number6,
-                        number7,
-                        number8,
-                        number9,
-                        number10,
-                        number11,
-                        number12,
-                        number13,
-                        number14,
-                        number15,
-                        number16,
-                        number17,
-                        number18,
-                        number19,
-                        number20
-                    )
-                )
+                allarray.addAll(listOf(number1,number2,number3,number4,number5,number6,number7,number8,number9,number10,number11,number12,
+                    number13,number14,number15,number16,number17,number18,number19,number20))
                 var reexper: ArrayList<Double> = arrayListOf()
                 reexper.addAll(listOf(number1, number2, number3, number4, number5))
                 var avoid: ArrayList<Double> = arrayListOf()
                 avoid.addAll(listOf(number6, number7))
                 var alter: ArrayList<Double> = arrayListOf()
-                alter.addAll(
-                    listOf(
-                        number8,
-                        number9,
-                        number10,
-                        number11,
-                        number12,
-                        number13,
-                        number14
-                    )
-                )
+                alter.addAll(listOf(number8,number9,number10,number11,number12,number13,number14))
                 var hyper: ArrayList<Double> = arrayListOf()
                 hyper.addAll(listOf(number15, number16, number17, number18, number19, number20))
 
@@ -298,8 +266,7 @@ class TestFragment : Fragment() {
 
                 reexperiencing = number1 + number2 + number3 + number4 + number5
                 avoidance = number6 + number7
-                alterations =
-                    number8 + number9 + number10 + number11 + number12 + number13 + number14
+                alterations = number8 + number9 + number10 + number11 + number12 + number13 + number14
                 hyperarousal = number15 + number16 + number17 + number18 + number19 + number20
                 sum = reexperiencing + avoidance + alterations + hyperarousal
                 val formatter = SimpleDateFormat("dd-MM")
