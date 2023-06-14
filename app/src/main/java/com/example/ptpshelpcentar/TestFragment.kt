@@ -20,7 +20,6 @@ class TestFragment : Fragment() {
 
     private val db = Firebase.firestore
     private val user = Firebase.auth.currentUser
-    var diagnosis: String = ""
     var overallAuth: ArrayList<Boolean> = arrayListOf()
     var BclusterAuth: ArrayList<Boolean> = arrayListOf()
     var CclusterAuth: ArrayList<Boolean> = arrayListOf()
@@ -272,9 +271,6 @@ class TestFragment : Fragment() {
                 val formatter = SimpleDateFormat("dd-MM")
                 val date = Date()
                 val current = formatter.format(date).toString()
-                diagnosis(sum)
-
-
 
                 overalls.add(sum)
                 Bclusters.add(reexperiencing)
@@ -328,18 +324,6 @@ class TestFragment : Fragment() {
         return view
     }
 
-    fun diagnosis(sum: Double) {
-        if(sum <= 31.0) {
-           diagnosis = "LOW"
-        }
-        if(sum in 32.0..51.0) {
-            diagnosis = "MODERATE"
-        }
-        if (sum in 52.0..80.0) {
-           diagnosis = "HIGH"
-        }
-
-    }
 
     fun scoring(scores : ArrayList<Double>) {
         var br :Int = 0
