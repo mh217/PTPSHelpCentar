@@ -67,7 +67,33 @@ class TipsFragment : Fragment() {
                 }
                 .addOnCompleteListener {
                     if(overalls.isNotEmpty() && Bclusters.isNotEmpty() && Cclusters.isNotEmpty() && Dclusters.isNotEmpty() && Eclusters.isNotEmpty()) {
-                        var diagnosis: String = Scorer.scoring(
+                        var clusters : ArrayList<String> = arrayListOf()
+                        clusters = TipsScorer.distribution(Bclusters.last(),Cclusters.last(), Dclusters.last(),Eclusters.last())
+
+                        db.collection("Treatment")
+                            .whereArrayContainsAny("Clusters", clusters)
+                            .get()
+                            .addOnSuccessListener { result ->
+                                val treatmentArrayList: ArrayList<Treatment> = ArrayList()
+                                for (data in result.documents) {
+                                    val treatments = data.toObject(Treatment::class.java)
+                                    if (treatments != null) {
+                                        treatments.Id = data.id
+                                        treatmentArrayList.add(treatments)
+                                    }
+                                }
+                                treatmentAdapter = TreatmentAdapter(treatmentArrayList)
+                                recycler.apply {
+                                    layoutManager = LinearLayoutManager(context)
+                                    adapter = treatmentAdapter
+                                }
+                            }
+                            .addOnFailureListener { exception ->
+                                Log.w("Scores", "Error getting documents", exception)
+
+                            }
+
+                        /* var diagnosis: String = Scorer.scoring(
                             overalls.last(),
                             Bclusters.last(),
                             Cclusters.last(),
@@ -151,6 +177,8 @@ class TipsFragment : Fragment() {
 
                             }
                         }
+
+                         */
                     }
                     else {
                         db.collection("Treatment")
