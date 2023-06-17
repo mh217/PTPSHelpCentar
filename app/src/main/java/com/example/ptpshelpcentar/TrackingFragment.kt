@@ -203,11 +203,13 @@ class TrackingFragment : Fragment() {
                        barChart.xAxis.valueFormatter = IndexAxisValueFormatter(date)
 
 
-                       barChart.setVisibleXRangeMaximum(5f)
+                       barChart.setScaleMinima(3f,1f)
                        barChart.isDragEnabled = true
                        barChart.isScaleXEnabled = true
                        barChart.setDrawGridBackground(false)
                        barDataSet = BarDataSet(barEntriesList, "Ukupni rezultati testa")
+                       barDataSet.label = ""
+                       barDataSet.valueTextColor = Color.TRANSPARENT
                        barDataSet.colors = colors
                        barData = BarData(barDataSet)
                        barChart.data = barData
