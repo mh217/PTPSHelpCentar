@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -33,6 +34,7 @@ class TipsFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_tips, container, false)
 
         val recycler = view.findViewById<RecyclerView>(R.id.RecyclerViewTreatment)
+        val simptomi = view.findViewById<TextView>(R.id.simptomipoviseni)
 
 
         user?.let {
@@ -70,6 +72,8 @@ class TipsFragment : Fragment() {
                         var clusters : ArrayList<String> = arrayListOf()
                         clusters = TipsScorer.distribution(Bclusters.last(),Cclusters.last(), Dclusters.last(),Eclusters.last())
 
+                        simptomi.text = clusters.toString()
+
                         db.collection("Treatment")
                             .whereArrayContainsAny("Clusters", clusters)
                             .get()
@@ -92,93 +96,6 @@ class TipsFragment : Fragment() {
                                 Log.w("Scores", "Error getting documents", exception)
 
                             }
-
-                        /* var diagnosis: String = Scorer.scoring(
-                            overalls.last(),
-                            Bclusters.last(),
-                            Cclusters.last(),
-                            Dclusters.last(),
-                            Eclusters.last(),
-                            1
-                        )
-
-                        when (diagnosis) {
-                            "LOW" -> {
-                                db.collection("Treatment")
-                                    .whereArrayContains("Risk", "LOW")
-                                    .get()
-                                    .addOnSuccessListener { result ->
-                                        val treatmentArrayList: ArrayList<Treatment> = ArrayList()
-                                        for (data in result.documents) {
-                                            val treatments = data.toObject(Treatment::class.java)
-                                            if (treatments != null) {
-                                                treatments.Id = data.id
-                                                treatmentArrayList.add(treatments)
-                                            }
-                                        }
-                                        treatmentAdapter = TreatmentAdapter(treatmentArrayList)
-                                        recycler.apply {
-                                            layoutManager = LinearLayoutManager(context)
-                                            adapter = treatmentAdapter
-                                        }
-                                    }
-                                    .addOnFailureListener { exception ->
-                                        Log.w("Scores", "Error getting documents", exception)
-
-                                    }
-                            }
-                            "MEDIUM" -> {
-                                db.collection("Treatment")
-                                    .whereArrayContains("Risk", "MEDIUM")
-                                    .get()
-                                    .addOnSuccessListener { result ->
-                                        val treatmentArrayList: ArrayList<Treatment> = ArrayList()
-                                        for (data in result.documents) {
-                                            val treatments = data.toObject(Treatment::class.java)
-                                            if (treatments != null) {
-                                                treatments.Id = data.id
-                                                treatmentArrayList.add(treatments)
-                                            }
-                                        }
-                                        treatmentAdapter = TreatmentAdapter(treatmentArrayList)
-                                        recycler.apply {
-                                            layoutManager = LinearLayoutManager(context)
-                                            adapter = treatmentAdapter
-                                        }
-                                    }
-                                    .addOnFailureListener { exception ->
-                                        Log.w("Scores", "Error getting documents", exception)
-
-                                    }
-                            }
-                            "HIGH" -> {
-                                db.collection("Treatment")
-                                    .whereArrayContains("Risk", "HIGH")
-                                    .get()
-                                    .addOnSuccessListener { result ->
-                                        val treatmentArrayList: ArrayList<Treatment> = ArrayList()
-                                        for (data in result.documents) {
-                                            val treatments = data.toObject(Treatment::class.java)
-                                            if (treatments != null) {
-                                                treatments.Id = data.id
-                                                treatmentArrayList.add(treatments)
-                                            }
-                                        }
-                                        treatmentAdapter = TreatmentAdapter(treatmentArrayList)
-                                        recycler.apply {
-                                            layoutManager = LinearLayoutManager(context)
-                                            adapter = treatmentAdapter
-                                        }
-                                    }
-                                    .addOnFailureListener { exception ->
-                                        Log.w("Scores", "Error getting documents", exception)
-
-                                    }
-
-                            }
-                        }
-
-                         */
                     }
                     else {
                         db.collection("Treatment")
