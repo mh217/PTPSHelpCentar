@@ -98,6 +98,7 @@ class TipsFragment : Fragment() {
                             }
                     }
                     else {
+                        simptomi.text = "Nepoznato"
                         db.collection("Treatment")
                             .get()
                             .addOnSuccessListener { result ->
