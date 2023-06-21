@@ -73,7 +73,6 @@ class TipsFragment : Fragment() {
                         clusters = TipsScorer.distribution(Bclusters.last(),Cclusters.last(), Dclusters.last(),Eclusters.last())
 
                         simptomi.text = clusters.joinToString()
-
                         db.collection("Treatment")
                             .whereArrayContainsAny("Clusters", clusters)
                             .get()
