@@ -72,7 +72,7 @@ class TipsFragment : Fragment() {
                         var clusters : ArrayList<String> = arrayListOf()
                         clusters = TipsScorer.distribution(Bclusters.last(),Cclusters.last(), Dclusters.last(),Eclusters.last())
 
-                        simptomi.text = clusters.toString()
+                        simptomi.text = clusters.joinToString()
 
                         db.collection("Treatment")
                             .whereArrayContainsAny("Clusters", clusters)

@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginTop="5dp"
-            android:text="Preporuke za simptome koji su povišeni:"
+            android:text="Savjeti s obzirom na:"
             android:textColor="@color/darkteal"
             android:textSize="17sp"/>
 
