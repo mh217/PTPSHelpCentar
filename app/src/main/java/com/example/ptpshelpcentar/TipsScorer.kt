@@ -28,10 +28,11 @@ object TipsScorer {
         if(diagnostics[3] == "HIGH" || diagnostics[3] == "MEDIUM") {
             clusters.add("Vracanje na stresno iskustvo")
         }
-        else {
+        if(clusters.isEmpty()) {
           clusters.add("Opci savjet")
         }
         return clusters
 
     }
 }
+
