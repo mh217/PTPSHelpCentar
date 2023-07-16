@@ -5,4 +5,5 @@ data class Treatment(
     var Name: String ="",
     var Description : String ="",
     var Image: String ="",
+    var Clusters : ArrayList<String> = arrayListOf(),
 )

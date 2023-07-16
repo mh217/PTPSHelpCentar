@@ -181,17 +181,17 @@ class TrackingFragment : Fragment() {
                            }
                        }
 
-
                        barEntriesList = ArrayList()
                        for ((index, value) in overalls.withIndex()) {
                            barEntriesList.add(BarEntry((index).toFloat(), value.toFloat()))
-
                        }
+
 
                        val date = arrayListOf<String>()
                        for ((index, value) in dateList.withIndex()) {
                            date.add(value)
                        }
+
 
                        val xAxis = barChart.xAxis
                        xAxis.setDrawLabels(true)
@@ -203,7 +203,9 @@ class TrackingFragment : Fragment() {
                        barChart.xAxis.valueFormatter = IndexAxisValueFormatter(date)
 
 
-                       barChart.setScaleMinima(3f,1f)
+
+
+                       barChart.setScaleMinima(2f,1f)
                        barChart.isDragEnabled = true
                        barChart.isScaleXEnabled = true
                        barChart.setDrawGridBackground(false)
@@ -213,7 +215,7 @@ class TrackingFragment : Fragment() {
                        barDataSet.colors = colors
                        barData = BarData(barDataSet)
                        barChart.data = barData
-                       barData.barWidth = 0.5f
+                       barData.barWidth = 0.1f
                        barChart.setFitBars(true)
                        barDataSet.valueTextColor = Color.BLACK
                        barDataSet.valueTextSize = 16f

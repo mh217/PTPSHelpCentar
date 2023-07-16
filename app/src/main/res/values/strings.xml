@@ -50,24 +50,24 @@
     <!-- Pitanja -->
     <string name="q1">Ponavljajuća, uznemirujuća i neželjena sjećanja na stresno iskustvo?</string>
     <string name="q2">Ponavljani, uznemirujući snovi o stresnom iskustvu?</string>
-    <string name="q3">Iznenada se osjećate ili ponašate kao da je to stresno iskustvo zapravo se ponovno događa (kao da ste se stvarno vratili tamo ponovno proživljavanje)?</string>
+    <string name="q3">Iznenadno se osjećate ili ponašate kao da je to stresno iskustvo zapravo ponovno događa (kao da ste se stvarno vratili tamo, te ga ponovno proživljavate)?</string>
     <string name="q4">Osjećate se jako uzrujano kada vas nešto podsjeti na stresno iskustvo?</string>
-    <string name="q5">Snažne fizičke reakcije kada nešto podsjeti vas od stresnog iskustva (na primjer, lupanje srca, poteškoće s disanjem, znojenje)?</string>
-    <string name="q6">Izbjegavanje sjećanja, misli ili osjećaja povezanih sstresno iskustvo?</string>
+    <string name="q5">Snažne fizičke reakcije kada vas nešto podsjeti na stresno iskustvo (na primjer, lupanje srca, poteškoće s disanjem, znojenje)?</string>
+    <string name="q6">Izbjegavanje sjećanja, misli ili osjećaja povezanih stresno iskustvo?</string>
     <string name="q7">Izbjegavanje vanjskih podsjetnika na stresno iskustvo (na primjer, ljudi, mjesta, razgovori, aktivnosti, predmeti ili situacije)?</string>
     <string name="q8">Problemi s pamćenjem važnih dijelova stresnog događaja iskustvo?</string>
-    <string name="q9">Imati jaka negativna uvjerenja o sebi, drugim ljudima, ili svijet (na primjer, imati misli poput: Ja sam loše, nešto ozbiljno nije u redu sa mnom, nikome se ne može vjerovati, svijet je potpuno opasan)?</string>
-    <string name="q10">Okrivljavanje sebe ili nekog drugog za stresno iskustvo ili ono što se dogodilo nakon njega? </string>
+    <string name="q9">Imate jaka negativna uvjerenja o sebi, drugim ljudima, ili svijetu (na primjer, imati misli poput: Ja sam loše, nešto ozbiljno nije u redu sa mnom, nikome se ne može vjerovati, svijet je potpuno opasan)?</string>
+    <string name="q10">Okrivljujete sebe ili nekog drugog za stresno iskustvo ili ono što se dogodilo nakon njega? </string>
     <string name="q11">Imati jake negativne osjećaje kao što su strah, užas, ljutnja, krivnja ili sram?</string>
     <string name="q12">Gubitak interesa za aktivnosti u kojima ste prije uživali?</string>
     <string name="q13">Osjećate se udaljeno ili odsječeno od drugih ljudi?</string>
     <string name="q14">Poteškoće s doživljavanjem pozitivnih osjećaja (na primjer, biti nesposobni osjetiti sreću ili imati osjećaje ljubavi prema ljudima blizu tebe)?</string>
     <string name="q15">Razdražljivo ponašanje, ispadi bijesa ili agresivno ponašanje?</string>
-    <string name="q16">Previše riskirati ili raditi stvari koje bi vas mogle uzrokovati naškoditi?</string>
+    <string name="q16">Previše riskirate ili raditi stvari koje bi vam mogle naškoditi?</string>
     <string name="q17">Biti "super oprezan" ili oprezan ili na oprezu?</string>
     <string name="q18">Osjećate se nervozno ili se lako preplašite?</string>
     <string name="q19">Imate poteškoća s koncentracijom?</string>
-    <string name="q20"> Problemi sa spavanjem?</string>
+    <string name="q20">Poteškoće kada pokušavate zaspati?</string>
 
 
 </resources>

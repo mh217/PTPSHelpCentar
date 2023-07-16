@@ -46,6 +46,7 @@ class TreatmentAdapter(private val treatmentList: ArrayList<Treatment>) : Recycl
 
         val name = view.findViewById<TextView>(R.id.NametreatTxt)
         val image = view.findViewById<ImageView>(R.id.Imageim)
+        val simptomi = view.findViewById<TextView>(R.id.treatarrayTxt)
 
 
         fun bind(index: Int,  treatment: Treatment) {
@@ -54,6 +55,7 @@ class TreatmentAdapter(private val treatmentList: ArrayList<Treatment>) : Recycl
                 .load(treatment.Image)
                 .into(image)
             name.text=treatment.Name.toString()
+            simptomi.text = treatment.Clusters.toString()
 
 
         }
