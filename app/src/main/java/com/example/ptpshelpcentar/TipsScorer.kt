@@ -17,16 +17,16 @@ object TipsScorer {
         diagnostics.addAll(listOf(bdiagnosis, cdiagnosis, ddiagnosis, ediagnosis))
 
         if (diagnostics[0] == "HIGH" || diagnostics[0] == "MEDIUM") {
-            clusters.add("Nagle promjene u ponasanju")
+            clusters.add("Vracanje na stresno iskustvo")
         }
         if(diagnostics[1] == "HIGH" || diagnostics[1] == "MEDIUM") {
             clusters.add("Izbjegavanje")
         }
         if(diagnostics[2] == "HIGH" || diagnostics[2] == "MEDIUM") {
-            clusters.add("Uznemirenost")
+            clusters.add("Nagle promjene u ponasanju")
         }
         if(diagnostics[3] == "HIGH" || diagnostics[3] == "MEDIUM") {
-            clusters.add("Vracanje na stresno iskustvo")
+            clusters.add("Uznemirenost")
         }
         if(clusters.isEmpty()) {
           clusters.add("Opci savjet")
