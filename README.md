@@ -1,4 +1,4 @@
-Aplikacija za otkrivanje, praćenje i preporuke za Posttraumatski stresni poremećaj. 
+# Aplikacija za otkrivanje, praćenje i preporuke za Posttraumatski stresni poremećaj. 
 
 Android aplikacija izrađena u programskom jeziku kotlin. 
 
